@@ -24,7 +24,9 @@ function runOnKeys(func) {
 }
 
 const sendCommentHendler = () => {
-  if (commentValue.value.length) {
+  let reg = new RegExp('([^\\s*]+)','g')
+  var found = commentValue.value.match(reg);
+  if (commentValue.value.length && found) {
     let newDate = new Date().toLocaleString("ru", {
       year: "numeric",
       month: "long",

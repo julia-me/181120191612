@@ -5,7 +5,7 @@
 
     &-img{
         z-index: 1;
-        
+
         img{
             display: block;
             width: 60px;
@@ -42,7 +42,7 @@
             @include screen-md {
                 margin-top: 0;
                 margin-left: -39px;
-                padding: 13px 13px 9px 39px;
+                padding: 13px 5px 9px 36px;
                 position: unset;
                 border-radius: 0 5px 5px 0;
             }
